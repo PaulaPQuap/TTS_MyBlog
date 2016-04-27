@@ -8,6 +8,7 @@ class BlogPostsController < ApplicationController
   end
 
   def your_posts
+    @user = User.find params[:id]
   end
 
   def user_posts
